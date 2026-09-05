@@ -130,7 +130,7 @@ export default function Hero() {
           {/* Secondary Button */}
           <Link
             href="/services"
-            className="rounded-xl border border-[#F5D9A6] bg-white px-7 py-4 text-center font-semibold text-slate-800 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-[#DD901E] hover:bg-[#FFF7E8] hover:text-[#C77A18]"
+            className="rounded-xl border border-[#F5D9A6] bg-white px-7 py-4 text-center font-semibold text-slate-800 shadow-lg shadow-[#DD901E]/30 transition duration-300 hover:-translate-y-1 hover:bg-[#C77A18]"
           >
             Explore Services
           </Link>
