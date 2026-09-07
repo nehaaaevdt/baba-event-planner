@@ -16,10 +16,10 @@ export default function Button({
       "bg-[#DD901E] text-white hover:bg-[#B87512] hover:shadow-lg hover:shadow-[#DD901E]/25 active:scale-95",
 
     secondary:
-      "bg-slate-100 text-slate-800 hover:bg-[#FFF9EF] active:scale-95",
+      "bg-slate-100 text-slate-800 hover:bg-[#FFF9EF] active:scale-95 dark:bg-slate-800 dark:text-slate-100 dark:hover:bg-slate-700",
 
     outline:
-      "border border-[#DD901E] text-[#DD901E] hover:bg-[#FFF9EF] hover:border-[#B87512] hover:text-[#B87512] active:scale-95",
+      "border border-[#DD901E] text-[#DD901E] hover:bg-[#FFF9EF] hover:border-[#B87512] hover:text-[#B87512] active:scale-95 dark:hover:bg-[#DD901E]/10",
   };
 
   const sizes = {
@@ -28,7 +28,7 @@ export default function Button({
     lg: "px-7 py-3 text-base",
   };
 
-  const classes = `${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`;
+  const classes = `${baseStyles} ${variants[variant] || variants.primary} ${sizes[size] || sizes.md} ${className}`;
 
   // If href exists, render a Next.js Link
   if (href) {
@@ -46,4 +46,3 @@ export default function Button({
     </button>
   );
 }
-

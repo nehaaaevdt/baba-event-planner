@@ -16,7 +16,7 @@ const galleryImages = [
 
 export default function Gallery() {
   return (
-    <section className="bg-[#fdfaf7] px-6 py-24 sm:px-8 lg:px-12">
+    <section className="bg-[#fdfaf7] px-6 py-24 transition-colors duration-300 dark:bg-[#0B0F17] sm:px-8 lg:px-12">
       <div className="mx-auto max-w-7xl">
 
         {/* Heading */}
@@ -31,11 +31,11 @@ export default function Gallery() {
             Our Gallery
           </span>
 
-          <h2 className="mt-4 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+          <h2 className="mt-4 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl dark:text-white">
             Moments We&apos;ve Created
           </h2>
 
-          <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-gray-600">
+          <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-gray-600 dark:text-slate-300">
             A glimpse of our celebrations, decorations and unforgettable
             events.
           </p>
@@ -53,7 +53,7 @@ export default function Gallery() {
                 duration: 0.6,
                 delay: index * 0.08,
               }}
-              className="group relative overflow-hidden rounded-2xl"
+              className="group relative overflow-hidden rounded-2xl bg-slate-100 dark:bg-slate-800"
             >
               <Image
                 src={image}

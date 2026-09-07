@@ -100,7 +100,7 @@ const contactInfo = [
 
 export default function Contact() {
   return (
-    <section className="bg-[#fdfaf7] px-6 py-24 sm:px-8 lg:px-12">
+    <section className="bg-[#fdfaf7] px-6 py-24 transition-colors duration-300 dark:bg-[#0B0F17] sm:px-8 lg:px-12">
       <div className="mx-auto max-w-6xl">
 
         {/* Heading */}
@@ -115,12 +115,12 @@ export default function Contact() {
             Get In Touch
           </p>
 
-          <h2 className="text-4xl font-bold text-gray-900 sm:text-5xl">
+          <h2 className="text-4xl font-bold text-gray-900 sm:text-5xl dark:text-white">
             Let&apos;s Plan Your{" "}
             <span className="text-[#DD901E]">Perfect Event</span>
           </h2>
 
-          <p className="mt-5 text-lg leading-8 text-gray-600">
+          <p className="mt-5 text-lg leading-8 text-gray-600 dark:text-slate-300">
             Have an event in mind? Get in touch with Baba Event Planner and
             let&apos;s create a memorable celebration together.
           </p>
@@ -141,17 +141,17 @@ export default function Contact() {
               className="group text-center"
             >
               {/* Icon */}
-              <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-white text-[#DD901E] shadow-md transition-all duration-300 group-hover:-translate-y-2 group-hover:bg-[#DD901E] group-hover:text-white group-hover:shadow-xl">
+              <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-white text-[#DD901E] shadow-md transition-all duration-300 group-hover:-translate-y-2 group-hover:bg-[#DD901E] group-hover:text-white group-hover:shadow-xl dark:bg-slate-900 dark:shadow-slate-900/50">
                 {item.icon}
               </div>
 
               {/* Title */}
-              <h3 className="mb-3 text-xl font-semibold text-gray-900">
+              <h3 className="mb-3 text-xl font-semibold text-gray-900 dark:text-white">
                 {item.title}
               </h3>
 
               {/* Details */}
-              <div className="text-sm leading-7 text-gray-600">
+              <div className="text-sm leading-7 text-gray-600 dark:text-slate-300">
                 {item.details}
               </div>
             </motion.div>
@@ -178,4 +178,3 @@ export default function Contact() {
     </section>
   );
 }
-

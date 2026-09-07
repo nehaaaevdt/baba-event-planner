@@ -97,10 +97,10 @@ export default function WhyChooseUs() {
         ))}
 
         {/* Lighter overlay so images are more visible */}
-        <div className="absolute inset-0 bg-black/35" />
+        <div className="absolute inset-0 bg-black/40 dark:bg-black/60" />
 
         {/* Light gradient for readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/50 dark:from-black/60 dark:via-black/40 dark:to-black/70" />
       </div>
 
       {/* Main Content */}
@@ -159,6 +159,10 @@ export default function WhyChooseUs() {
                 hover:border-[#F5D08A]/60
                 hover:bg-[#F5D08A]/15
                 hover:shadow-2xl
+                dark:border-white/10
+                dark:bg-slate-900/40
+                dark:hover:border-[#DD901E]/60
+                dark:hover:bg-slate-900/70
               "
             >
 
@@ -220,4 +224,3 @@ export default function WhyChooseUs() {
     </section>
   );
 }
-

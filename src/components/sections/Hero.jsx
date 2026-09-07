@@ -43,7 +43,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative overflow-hidden bg-[#fdfaf7]">
+    <section className="relative overflow-hidden bg-[#fdfaf7] transition-colors duration-300 dark:bg-[#0B0F17]">
 
       {/* Animated Image Slider */}
       <div className="relative mx-auto mt-20 h-[45vh] min-h-[350px] max-w-7xl overflow-hidden rounded-3xl px-4 sm:h-[55vh] sm:px-6 lg:px-8">
@@ -92,16 +92,16 @@ export default function Hero() {
       <div className="relative z-10 mx-auto max-w-5xl px-6 py-16 text-center lg:px-8">
 
         {/* Small Label */}
-        <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#F5D9A6] bg-white px-4 py-2 shadow-sm">
+        <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#F5D9A6] bg-white px-4 py-2 shadow-sm dark:border-slate-700 dark:bg-slate-900">
           <span className="h-2 w-2 animate-pulse rounded-full bg-[#DD901E]" />
 
-          <span className="text-sm font-medium text-slate-700">
+          <span className="text-sm font-medium text-slate-700 dark:text-slate-200">
             Creating Memories That Last Forever
           </span>
         </div>
 
         {/* Heading */}
-        <h1 className="text-4xl font-bold leading-tight tracking-tight text-slate-900 sm:text-5xl lg:text-7xl">
+        <h1 className="text-4xl font-bold leading-tight tracking-tight text-slate-900 sm:text-5xl lg:text-7xl dark:text-white">
           Turning Your Special Moments Into
 
           <span className="block bg-gradient-to-r from-[#C77A18] via-[#DD901E] to-[#F4A514] bg-clip-text text-transparent">
@@ -110,7 +110,7 @@ export default function Hero() {
         </h1>
 
         {/* Description */}
-        <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-600 sm:text-xl">
+        <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-600 sm:text-xl dark:text-slate-300">
           From dream weddings and elegant celebrations to unforgettable
           birthdays and professional corporate events, Baba Event Planner
           transforms your vision into a beautiful reality.
@@ -122,7 +122,7 @@ export default function Hero() {
           {/* Primary Button */}
           <Link
             href="/contact"
-            className="rounded-xl border border-[#F5D9A6] bg-white px-7 py-4 text-center font-semibold text-slate-800 shadow-lg shadow-[#DD901E]/30 transition duration-300 hover:-translate-y-1 hover:bg-[#C77A18]"
+            className="rounded-xl border border-[#F5D9A6] bg-white px-7 py-4 text-center font-semibold text-slate-800 shadow-lg shadow-[#DD901E]/30 transition duration-300 hover:-translate-y-1 hover:bg-[#C77A18] hover:text-white dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-[#C77A18]"
           >
             Plan Your Event →
           </Link>
@@ -130,7 +130,7 @@ export default function Hero() {
           {/* Secondary Button */}
           <Link
             href="/services"
-            className="rounded-xl border border-[#F5D9A6] bg-white px-7 py-4 text-center font-semibold text-slate-800 shadow-lg shadow-[#DD901E]/30 transition duration-300 hover:-translate-y-1 hover:bg-[#C77A18]"
+            className="rounded-xl border border-[#F5D9A6] bg-white px-7 py-4 text-center font-semibold text-slate-800 shadow-lg shadow-[#DD901E]/30 transition duration-300 hover:-translate-y-1 hover:bg-[#C77A18] hover:text-white dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-[#C77A18]"
           >
             Explore Services
           </Link>
@@ -138,34 +138,34 @@ export default function Hero() {
         </div>
 
         {/* Statistics */}
-        <div className="mx-auto mt-14 grid max-w-2xl grid-cols-3 gap-6 border-t border-slate-200 pt-8">
+        <div className="mx-auto mt-14 grid max-w-2xl grid-cols-3 gap-6 border-t border-slate-200 pt-8 dark:border-slate-800">
 
           <div>
-            <h3 className="text-3xl font-bold text-slate-900">
+            <h3 className="text-3xl font-bold text-slate-900 dark:text-white">
               500+
             </h3>
 
-            <p className="mt-1 text-sm text-slate-500">
+            <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
               Events Planned
             </p>
           </div>
 
           <div>
-            <h3 className="text-3xl font-bold text-slate-900">
+            <h3 className="text-3xl font-bold text-slate-900 dark:text-white">
               10+
             </h3>
 
-            <p className="mt-1 text-sm text-slate-500">
+            <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
               Years Experience
             </p>
           </div>
 
           <div>
-            <h3 className="text-3xl font-bold text-slate-900">
+            <h3 className="text-3xl font-bold text-slate-900 dark:text-white">
               100%
             </h3>
 
-            <p className="mt-1 text-sm text-slate-500">
+            <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
               Happy Clients
             </p>
           </div>
@@ -174,7 +174,7 @@ export default function Hero() {
       </div>
 
       {/* Bottom Decorative Gradient */}
-      <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white/50 to-transparent" />
+      <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white/50 to-transparent dark:from-[#0B0F17]/50" />
 
     </section>
   );

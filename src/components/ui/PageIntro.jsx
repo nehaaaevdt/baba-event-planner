@@ -19,7 +19,7 @@ export default function PageIntro() {
     <AnimatePresence>
       {visible && (
         <motion.div
-          className="fixed inset-0 z-[99999] flex items-center justify-center bg-[#fdfaf7]"
+          className="fixed inset-0 z-[99999] flex items-center justify-center bg-[#fdfaf7] transition-colors duration-300 dark:bg-[#0B0F17]"
           initial={{ opacity: 1 }}
           exit={{
             opacity: 0,
@@ -49,17 +49,18 @@ export default function PageIntro() {
             }}
           >
             <div className="relative h-40 w-75 sm:h-40 sm:w-90">
-                <Image
-                    src="/images/baba-logo.jpg"
-                    alt="Baba Event Planner"
-                    fill
-                    priority
-                    className="object-contain"
-            />
+              <Image
+                src="/images/baba-logo.jpg"
+                alt="Baba Event Planner"
+                fill
+                sizes="(max-width: 640px) 300px, 360px"
+                priority
+                className="object-contain rounded-xl"
+              />
             </div>
 
             <div className="mt-6 text-2xl text-[#DD901E]">
-            ✦
+              ✦
             </div>
           </motion.div>
         </motion.div>

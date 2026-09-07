@@ -51,7 +51,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="bg-white px-6 py-24 sm:px-8 lg:px-12">
+    <section className="bg-white px-6 py-24 transition-colors duration-300 dark:bg-[#0B0F17] sm:px-8 lg:px-12">
       <div className="mx-auto max-w-7xl">
 
         {/* Section Heading */}
@@ -66,11 +66,11 @@ export default function Services() {
             What We Do
           </span>
 
-          <h2 className="mt-3 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
+          <h2 className="mt-3 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl dark:text-white">
             Our Event Planning Services
           </h2>
 
-          <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-slate-600">
+          <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-slate-600 dark:text-slate-300">
             From weddings and birthdays to corporate events and beautiful
             decorations, we take care of every detail to make your celebration
             unforgettable.
@@ -97,6 +97,10 @@ export default function Services() {
                 hover:border-[#F5D08A]
                 hover:bg-[#FFF9EF]
                 hover:shadow-xl
+                dark:border-slate-800
+                dark:bg-slate-900/90
+                dark:hover:border-[#DD901E]/60
+                dark:hover:bg-slate-800/90
               "
             >
 
@@ -112,12 +116,12 @@ export default function Services() {
               </div>
 
               {/* Title */}
-              <h3 className="text-2xl font-bold text-slate-900">
+              <h3 className="text-2xl font-bold text-slate-900 dark:text-white">
                 {service.title}
               </h3>
 
               {/* Description */}
-              <p className="mt-4 leading-7 text-slate-600">
+              <p className="mt-4 leading-7 text-slate-600 dark:text-slate-300">
                 {service.description}
               </p>
 
@@ -161,4 +165,3 @@ export default function Services() {
     </section>
   );
 }
-

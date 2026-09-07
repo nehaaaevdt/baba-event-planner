@@ -9,7 +9,7 @@ import {
 
 export default function Home() {
   return (
-    <main className="w-full overflow-hidden">
+    <main className="w-full overflow-hidden bg-[#fdfaf7] transition-colors duration-300 dark:bg-[#0B0F17]">
       {/* 1. Hero Section */}
       <Hero />
 

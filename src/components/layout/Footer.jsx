@@ -3,28 +3,27 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-950 text-white">
+    <footer className="bg-slate-950 text-white transition-colors duration-300 dark:bg-[#070A0F]">
 
       {/* Main Footer */}
       <div className="mx-auto max-w-7xl px-6 py-16 sm:px-8 lg:px-12">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
 
           {/* Company */}
-<div>
-  <Link
-    href="/"
-    className="inline-flex items-center"
-  >
-    <Image
-      src="/images/Baba-footer-logo.jpg"
-      alt="Baba Event Planner"
-      width={320}
-      height={140}
-      className="h-auto w-[260px] object-contain"
-    />
-  </Link>
-
-</div>
+          <div>
+            <Link
+              href="/"
+              className="inline-flex items-center"
+            >
+              <Image
+                src="/images/Baba-footer-logo.jpg"
+                alt="Baba Event Planner"
+                width={320}
+                height={140}
+                className="h-auto w-[260px] object-contain rounded-lg"
+              />
+            </Link>
+          </div>
 
           {/* Quick Links */}
           <div>
@@ -136,7 +135,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-white/10">
+      <div className="border-t border-white/10 dark:border-slate-800">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-6 py-6 text-center sm:px-8 md:flex-row lg:px-12 md:text-left">
 
           <p className="text-sm text-slate-500">

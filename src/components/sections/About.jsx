@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <section className="overflow-hidden bg-[#fdfaf7] px-6 py-24 sm:px-8 lg:px-12">
+    <section className="overflow-hidden bg-[#fdfaf7] px-6 py-24 transition-colors duration-300 dark:bg-[#0B0F17] sm:px-8 lg:px-12">
       <div className="mx-auto max-w-7xl">
 
         {/* MAIN CONTENT */}
@@ -48,7 +48,7 @@ export default function About() {
                 delay: 0.25,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="mt-4 text-4xl font-bold leading-tight tracking-tight text-slate-900 sm:text-5xl"
+              className="mt-4 text-4xl font-bold leading-tight tracking-tight text-slate-900 sm:text-5xl dark:text-white"
             >
               We Turn Your Special Moments Into
               <span className="block text-[#DD901E]">
@@ -65,7 +65,7 @@ export default function About() {
                 duration: 0.8,
                 delay: 0.4,
               }}
-              className="mt-6 text-lg leading-8 text-slate-600"
+              className="mt-6 text-lg leading-8 text-slate-600 dark:text-slate-300"
             >
               At Baba Event Planner, we believe that every celebration deserves
               to be special. From intimate family gatherings to grand weddings
@@ -82,7 +82,7 @@ export default function About() {
                 duration: 0.8,
                 delay: 0.55,
               }}
-              className="mt-4 text-lg leading-8 text-slate-600"
+              className="mt-4 text-lg leading-8 text-slate-600 dark:text-slate-300"
             >
               Our experienced team handles planning, decoration, coordination
               and execution so that you can relax and enjoy your special day
@@ -162,7 +162,7 @@ export default function About() {
                 y: -6,
                 scale: 1.03,
               }}
-              className="absolute -bottom-6 -right-2 rounded-2xl border border-[#F5D9A6] bg-white p-6 shadow-xl sm:right-6"
+              className="absolute -bottom-6 -right-2 rounded-2xl border border-[#F5D9A6] bg-white p-6 shadow-xl dark:border-slate-700 dark:bg-slate-900 sm:right-6"
             >
               <motion.p
                 initial={{ opacity: 0 }}
@@ -174,7 +174,7 @@ export default function About() {
                 10+
               </motion.p>
 
-              <p className="mt-1 text-sm font-medium text-slate-600">
+              <p className="mt-1 text-sm font-medium text-slate-600 dark:text-slate-300">
                 Years of Experience
               </p>
             </motion.div>
@@ -212,4 +212,3 @@ export default function About() {
     </section>
   );
 }
-
